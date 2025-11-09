@@ -81,7 +81,6 @@ limpieza <- function(linea) {
   x = str_remove_all(x, "¡")
   x = str_replace_all(x, espacios, " ")
   x = str_trim(x)
-  x = str_to_lower(x)
   x[x == ""] <- NA_character_ #si alguna línea entera queda vacía
 
   return(x)
