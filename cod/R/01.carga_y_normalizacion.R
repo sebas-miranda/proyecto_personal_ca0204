@@ -58,7 +58,8 @@ lexicon.normalizado <- lexicon.raw %>%
     trust = mayoria(trust, n()),
     negative = mayoria(negative, n()),
     positive = mayoria(positive, n()),
-  )
+  ) %>% 
+  rename(token = Spanish.Word)
 
 limpieza <- function(linea) {
   x = linea
@@ -91,7 +92,7 @@ subtitulos.normalizado <- subtitulos.raw %>%
 
 #se guardan como csv los archivos para uso posterior
 write.csv(subtitulos.normalizado, here("data", "processed", "subtitulos.normalizado.csv"), row.names = FALSE)
-write.csv(lexicon.normalizado, here("data", "processed", "lexico.normalizado.csv"), row.names = FALSE)
+write.csv(lexicon.normalizado, here("data", "processed", "lexicon.normalizado.csv"), row.names = FALSE)
 
 
   
