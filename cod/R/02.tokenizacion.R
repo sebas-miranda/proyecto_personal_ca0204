@@ -1,6 +1,6 @@
 #paquetes
 
-paquetes <- c("here", "stringr", "stringi", "stopwords", "tokenizers")
+paquetes <- c("here", "stringr", "stringi", "stopwords")
 
 faltantes <- paquetes[!(paquetes %in% installed.packages()[, "Package"])]
 
@@ -19,13 +19,5 @@ lineas <- subtitulos.normalizado$subtitle
 stopwords.raw <- stri_trans_general(stopwords::stopwords("es"), "Latin-ASCII")
 #quitamos cuantificadores pues se usarán luego como multiplicadores
 stopwords.final <- setdiff(stopwords.raw, c("no", "sin", "ni", "muy", "mas")) 
-
-#usamos paquete "tokenizers" para el proceso de tokenizar
-tokens <- tokenizers::tokenize_words(
-  lineas,
-  stopwords = stopwords.final,
-  strip_punct = TRUE,
-  strip_numeric = TRUE
-)
 
 
