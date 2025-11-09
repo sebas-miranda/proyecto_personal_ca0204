@@ -90,9 +90,9 @@ limpieza <- function(linea) {
 subtitulos.normalizado <- subtitulos.raw %>% 
   mutate(subtitle = limpieza(subtitle))
 
-
+#se guardan como csv los archivos para uso posterior
 write.csv(subtitulos.normalizado, here("data", "processed", "subtitulos.normalizado.csv"), row.names = FALSE)
-write.csv(lexicon.normalizado, here("data", "processed", "lexico.normalizado"), row.names = FALSE)
+write.csv(lexicon.normalizado, here("data", "processed", "lexico.normalizado.csv"), row.names = FALSE)
 
 
   
