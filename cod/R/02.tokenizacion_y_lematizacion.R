@@ -52,11 +52,12 @@ lematizado.normalizado <- lematizado.raw %>%
     token = lemma
   ) %>% 
   left_join( #se hace un conteo de signos de "!" y "?" por subtitle.id, para posteriormente usarlo como multiplicadores de emoción
+    #unimos el conteo por subtitle.id
     data.frame(subtitle.id = subtitulos.normalizado$n,
                n.excl = str_count(lineas, "!"),
                n.interr = str_count(lineas, "\\?")
                ),
-    by = "subtitle.id" #unimos el conteo por subtitle.id
+    by = "subtitle.id" 
   ) %>% 
   filter(!token %in% stopwords.final) #quitamos las stopwords anteriormente designadas
 
