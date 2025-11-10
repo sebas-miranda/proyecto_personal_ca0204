@@ -1,0 +1,57 @@
+paquetes <- c("here", "dplyr", "textclean", "srt")
+
+faltantes <- paquetes[!(paquetes %in% installed.packages()[, "Package"])]
+
+lapply(faltantes, install.packages)
+lapply(paquetes, library, character.only = TRUE)
+
+#leemos los archivos generados en el script anterior
+
+
+lematizado.normalizado <- read.csv(here("data", "processed", "lematizado.normalizado.csv"))
+
+#se cargan los subtitulos originales para adjuntarlos a cada ID puntuado
+subtitulos.raw <- read_srt(here("data", "raw", "Avengers.Endgame.2019.srt"))
+subtitulos.raw <- subtitulos.raw %>% mutate(n = (n-2)) %>% rename (subtitle.id = n)
+subtitulos.raw$subtitle <- replace_html(subtitulos.raw$subtitle,symbol = FALSE) #se quitan las anotaciones para hacerlo legible como texto
+#nota: se conservan todas las puntuaciones para ver las frases lo más "raw" posibles
+
+
+
+
+lexicon.normalizado <- read.csv(here("data", "processed", "lexicon.normalizado.csv"))
+
+
+#multiplicadores (pueden ser modificados a futuro según los resultados del modelo):
+
+#faltan multiplicadores para palabras posteriores a "no", "sin", "ni", "muy", "mas"
+
+mult.exclamacion <- data.frame(
+  c("joy", "anger", "anticipation", "disgust", "fear",
+    "sadness", "surprise", "trust", "negative", "positive"),
+  c(1.15,1.15,1.10,1.10,1.10,0.9,1.3,1,1.10,1.15)
+)
+
+mult.interrogacion <- data.frame(
+  c("joy", "anger", "anticipation", "disgust", "fear",
+      "sadness", "surprise", "trust", "negative", "positive"),
+  c(0.95,0.9,1.15,0.95,1,0.9,1.25,0.95,1,1)
+)
+
+#asociamos cada palabra a sus puntajes de emoción base (sin cuantificadores)
+
+emociones <- c("joy", "anger", "anticipation", "disgust", "fear",
+               "sadness", "surprise", "trust", "negative", "positive")
+
+puntajes.raw <- lematizado.normalizado %>% 
+  left_join(lexicon.normalizado, by = "token") %>% #asociamos a cada token su emocion
+  mutate(across(all_of(emociones), function(columna) {coalesce(columna, 0 )})) %>% #tratamos los NA de la operación anterior(si un token no tiene entrada en el lexicón se pone 0)
+  group_by(subtitle.id) %>% #agrupamos por los ID
+  summarise(
+    across(all_of(emociones), sum) #sumamos las emociones en cada una de las frases correspondientes a los ID
+  ) %>% 
+  left_join(subtitulos.raw, by = "subtitle.id") %>% #agregamos las frases en sí
+  select(subtitle.id, subtitle, everything()) #se ordena de forma más natural
+  
+
+
