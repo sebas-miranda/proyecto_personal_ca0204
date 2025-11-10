@@ -51,11 +51,13 @@ lematizado.normalizado <- lematizado.raw %>%
     subtitle.id = doc_id, 
     token = lemma
   ) %>% 
-  left_join( #se hace un conteo de signos de "!" y "?" por subtitle.id, para posteriormente usarlo como multiplicadores de emoción
+  left_join( #se hace un conteo de signos de "!","?" y palabras cuantificadoras por subtitle.id, para posteriormente usarlo como multiplicadores de emoción
     #unimos el conteo por subtitle.id
     data.frame(subtitle.id = subtitulos.normalizado$n,
                n.excl = str_count(lineas, "!"),
-               n.interr = str_count(lineas, "\\?")
+               n.interr = str_count(lineas, "\\?"),
+               n.neg = str_count(lineas, rex(boundary, or("no","sin","ni","tampoco"), boundary)),
+               n.afirm = str_count(lineas, rex(boundary, or("mas","muy","mucho","muchisimo"), boundary))
                ),
     by = "subtitle.id" 
   ) %>% 
