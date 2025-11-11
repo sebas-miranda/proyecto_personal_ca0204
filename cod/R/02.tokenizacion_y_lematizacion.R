@@ -1,6 +1,6 @@
 #paquetes
 
-paquetes <- c("here", "stringr", "stringi", "stopwords", "udpipe")
+paquetes <- c("here", "stringr", "stringi", "stopwords", "udpipe", "rex")
 
 faltantes <- paquetes[!(paquetes %in% installed.packages()[, "Package"])]
 
