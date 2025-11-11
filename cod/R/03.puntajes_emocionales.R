@@ -17,8 +17,6 @@ subtitulos.raw$subtitle <- replace_html(subtitulos.raw$subtitle,symbol = FALSE) 
 #nota: se conservan todas las puntuaciones para ver las frases lo más "raw" posibles
 
 
-
-
 lexicon.normalizado <- read.csv(here("data", "processed", "lexicon.normalizado.csv"))
 
 
@@ -27,26 +25,38 @@ lexicon.normalizado <- read.csv(here("data", "processed", "lexicon.normalizado.c
 #faltan multiplicadores para palabras posteriores a "no", "sin", "ni", "muy", "mas"
 
 mult.exclamacion <- data.frame(
-  c("joy", "anger", "anticipation", "disgust", "fear",
+  emocion = c("joy", "anger", "anticipation", "disgust", "fear",
     "sadness", "surprise", "trust", "negative", "positive"),
-  c(1.15,1.15,1.10,1.10,1.10,0.9,1.3,1,1.10,1.15)
+  puntajes = c(1.15,1.15,1.10,1.10,1.10,0.9,1.3,1,1.10,1.15)
 )
 
 mult.interrogacion <- data.frame(
-  c("joy", "anger", "anticipation", "disgust", "fear",
+  emocion = c("joy", "anger", "anticipation", "disgust", "fear",
       "sadness", "surprise", "trust", "negative", "positive"),
-  c(0.95,0.9,1.15,0.95,1,0.9,1.25,0.95,1,1)
+  puntajes = c(0.95,0.9,1.15,0.95,1,0.9,1.25,0.95,1,1)
 )
 
-#asociamos cada palabra a sus puntajes de emoción base (sin cuantificadores)
+mult.neg <- data.frame(
+  emocion = c("joy", "anger", "anticipation", "disgust", "fear",
+              "sadness", "surprise", "trust", "negative", "positive"),
+  puntajes = c(0.95,0.95,0.95,0.95,0.95,0.95,0.95,0.95,1.1,0.95)
+)
+
+mult.afirm <-  data.frame(
+  emocion = c("joy", "anger", "anticipation", "disgust", "fear",
+              "sadness", "surprise", "trust", "negative", "positive"),
+  puntajes = c(1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1,1)
+)
 
 emociones <- c("joy", "anger", "anticipation", "disgust", "fear",
                "sadness", "surprise", "trust", "negative", "positive")
 
+#asociamos cada palabra a sus puntajes de emoción base (sin cuantificadores)
+
 puntajes.raw <- lematizado.normalizado %>% 
   left_join(lexicon.normalizado, by = "token") %>% #asociamos a cada token su emocion
   mutate(across(all_of(emociones), function(columna) {coalesce(columna, 0 )})) %>% #tratamos los NA de la operación anterior(si un token no tiene entrada en el lexicón se pone 0)
-  group_by(subtitle.id) %>% #agrupamos por los ID
+  group_by(subtitle.id, n.excl, n.interr, n.neg, n.afirm) %>% #agrupamos por los ID
   summarise(
     across(all_of(emociones), sum) #sumamos las emociones en cada una de las frases correspondientes a los ID
   ) %>% 
