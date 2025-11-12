@@ -10,19 +10,13 @@ lapply(faltantes, install.packages)
 #cargamos todos los paquetes a la sesión
 lapply(paquetes, library, character.only = TRUE)
 
-#inicialmente se probará el flujo con 1 archivo de prueba correspondiente a la 
-#película de Avengers Endgame, idealmente en el futuro se expandirá a todos los
-#archivos de subtítulo que estén en la carpeta designada en data/raw
 
 #adicionalmente, se usa paquete "here" para poder usar rutas relativas al proyecto
 #y asegurar que el código sea reproducible en otras máquinas
 
 #asimismo, se usa el paquete "srt" para guardar el archivo .srt donde vienen
 #los subtítulos como un df:
-subtitulos.raw <- read_srt(here("data", "raw", "Avengers.Endgame.2019.srt"))
-subtitulos.raw <- subtitulos.raw %>% mutate(
-  n = (n-2)
-)
+subtitulos.raw <- read_srt(here("data", "raw", "input", "subtitulos.srt"))
 
 
 #se importa el lexicón (diccionario de emociones) inicial para poder limpiarlo, 

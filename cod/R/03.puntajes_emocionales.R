@@ -11,8 +11,9 @@ lapply(paquetes, library, character.only = TRUE)
 lematizado.normalizado <- read.csv(here("data", "processed", "lematizado.normalizado.csv"))
 
 #se cargan los subtitulos originales para adjuntarlos a cada ID puntuado
-subtitulos.raw <- read_srt(here("data", "raw", "Avengers.Endgame.2019.srt"))
-subtitulos.raw <- subtitulos.raw %>% mutate(n = (n-2)) %>% rename (subtitle.id = n)
+subtitulos.raw <- read_srt(here("data", "raw", "input", "subtitulos.srt"))
+subtitulos.raw <- subtitulos.raw %>% 
+  rename (subtitle.id = n)
 subtitulos.raw$subtitle <- replace_html(subtitulos.raw$subtitle,symbol = FALSE) #se quitan las anotaciones para hacerlo legible como texto
 #nota: se conservan todas las puntuaciones para ver las frases lo más "raw" posibles
 
