@@ -23,8 +23,6 @@ lexicon.normalizado <- read.csv(here("data", "processed", "lexicon.normalizado.c
 
 #multiplicadores (pueden ser modificados a futuro según los resultados del modelo):
 
-#faltan multiplicadores para palabras posteriores a "no", "sin", "ni", "muy", "mas"
-
 mult.exclamacion <- data.frame(
   emocion = c("joy", "anger", "anticipation", "disgust", "fear",
     "sadness", "surprise", "trust", "negative", "positive"),
@@ -64,5 +62,18 @@ puntajes.raw <- lematizado.normalizado %>%
   left_join(subtitulos.raw, by = "subtitle.id") %>% #agregamos las frases en sí
   select(subtitle.id, subtitle, everything()) #se ordena de forma más natural
   
+#aplicar multiplicadores
 
-
+puntajes.multiplicados <- puntajes.raw
+for (emo in emociones) {
+  fac.ex <- mult.exclamacion$puntajes[mult.exclamacion$emocion == emo] #tomamos cada factor según la emoción correspondiente
+  fac.in <- mult.interrogacion$puntajes[mult.interrogacion$emocion == emo]
+  fac.neg <- mult.neg$puntajes[mult.neg$emocion == emo]
+  fac.afi <- mult.afirm$puntajes[mult.afirm$emocion == emo]
+  
+  puntajes.multiplicados[[emo]] <- puntajes.raw[[emo]] * #multiplicación vectorizada por columna, para cada emoción
+    (fac.ex ^ puntajes.raw$n.excl) * 
+    (fac.in ^ puntajes.raw$n.interr) *
+    (fac.neg ^ puntajes.raw$n.neg) *
+    (fac.afi ^ puntajes.raw$n.afirm) 
+}
