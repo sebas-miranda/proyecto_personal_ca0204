@@ -77,3 +77,5 @@ for (emo in emociones) {
     (fac.neg ^ puntajes.raw$n.neg) *
     (fac.afi ^ puntajes.raw$n.afirm) 
 }
+
+write.csv(puntajes.multiplicados, here("data", "processed", "puntajes.multiplicados.csv"), row.names = FALSE)
