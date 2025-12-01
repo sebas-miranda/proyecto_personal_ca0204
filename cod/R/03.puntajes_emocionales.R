@@ -78,4 +78,50 @@ for (emo in emociones) {
     (fac.afi ^ puntajes.raw$n.afirm) 
 }
 
+#cuando la línea no tiene palabras del lexicón pero sí ! o ?, se le suma un valor base pequeño
+
+mult.exclamacion.base <- data.frame(
+  emocion = c("joy", "anger", "anticipation", "disgust", "fear",
+              "sadness", "surprise", "trust", "negative", "positive"),
+  puntajes = c(0.10, 0.07, 0.04, 0.03, 0.06, 0.04, 0.15, 0.03, 0.06, 0.08)
+)
+
+mult.interrogacion.base <- data.frame(
+  emocion = c("joy", "anger", "anticipation", "disgust", "fear",
+              "sadness", "surprise", "trust", "negative", "positive"),
+  puntajes = c(0.02, 0.03, 0.12, 0.01, 0.06, 0.03, 0.10, 0.02, 0.03, 0.01)
+)
+
+
+#cuántas palabras con emoción tiene cada subtítulo
+conteo.emociones <- lematizado.normalizado %>% 
+  left_join(lexicon.normalizado, by = "token") %>% 
+  mutate(tiene.emocion = if_any(all_of(emociones), ~ .x == 1)) %>% 
+  count(subtitle.id, wt = tiene.emocion, name = "n.coincidencias")
+
+puntajes.multiplicados <- puntajes.multiplicados %>% 
+  left_join(conteo.emociones, by = "subtitle.id") %>% 
+  mutate(n.coincidencias = coalesce(n.coincidencias, 0))
+
+#aplicar los valores base
+for (emo in emociones) {
+  
+  base.ex <- mult.exclamacion.base$puntajes[mult.exclamacion.base$emocion == emo]
+  base.in <- mult.interrogacion.base$puntajes[mult.interrogacion.base$emocion == emo]
+  
+  ajuste.ex <- ifelse(
+    puntajes.multiplicados$n.excl > 0 & puntajes.multiplicados[[emo]] == 0,
+    base.ex * puntajes.multiplicados$n.excl,
+    0
+  )
+  
+  ajuste.in <- ifelse(
+    puntajes.multiplicados$n.interr > 0 & puntajes.multiplicados[[emo]] == 0,
+    base.in * puntajes.multiplicados$n.interr,
+    0
+  )
+  
+  puntajes.multiplicados[[emo]] <- puntajes.multiplicados[[emo]] + ajuste.ex + ajuste.in
+}
+
 write.csv(puntajes.multiplicados, here("data", "processed", "puntajes.multiplicados.csv"), row.names = FALSE)
