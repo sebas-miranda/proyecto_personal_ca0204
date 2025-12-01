@@ -110,13 +110,13 @@ for (emo in emociones) {
   base.in <- mult.interrogacion.base$puntajes[mult.interrogacion.base$emocion == emo]
   
   ajuste.ex <- ifelse(
-    puntajes.multiplicados$n.excl > 0 & puntajes.multiplicados[[emo]] == 0,
+    puntajes.multiplicados$n.coincidencias == 0 & puntajes.multiplicados$n.excl > 0,
     base.ex * puntajes.multiplicados$n.excl,
     0
   )
   
   ajuste.in <- ifelse(
-    puntajes.multiplicados$n.interr > 0 & puntajes.multiplicados[[emo]] == 0,
+    puntajes.multiplicados$n.coincidencias == 0 & puntajes.multiplicados$n.interr > 0,
     base.in * puntajes.multiplicados$n.interr,
     0
   )
