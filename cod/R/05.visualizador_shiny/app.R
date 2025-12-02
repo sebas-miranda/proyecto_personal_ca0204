@@ -18,9 +18,22 @@ emociones <- c(
   "sadness","surprise","trust","negative","positive"
 )
 
-paleta.emociones <- c(joy="#FFB703", anger="#E5383B", anticipation="#FB8500", disgust="#6A994E",
-            fear="#023047", sadness="#577590", surprise="#8ECAE6", trust="#90BE6D",
+paleta.emociones <- c(joy="#FFB703", anger="#E5383B", anticipation="#FB8500", disgust="#3A5A40",
+            fear="#023047", sadness="#577590", surprise="#8ECAE6", trust="#B5E48C",
             negative="#8338EC", positive="#FFD166")
+
+etiquetas.emociones <- c(
+  joy="alegría",
+  anger="ira",
+  anticipation="anticipación",
+  disgust="asco",
+  fear="miedo",
+  sadness="tristeza",
+  surprise="sorpresa",
+  trust="confianza",
+  negative="negativo",
+  positive="positivo"
+)
 
 duracion.total <- max(puntajes.multiplicados$end, na.rm = TRUE)
 
@@ -40,7 +53,6 @@ buscar.linea.por.tiempo <- function(datos, tiempo.segundos) {
 }
 
 hacer.flor <- function(fila, emociones, paleta.emociones) {
-  
   datos.largos = fila %>%
     select(all_of(emociones)) %>%
     pivot_longer(
@@ -50,7 +62,8 @@ hacer.flor <- function(fila, emociones, paleta.emociones) {
     ) %>%
     mutate(
       valor = ifelse(is.na(valor), 0, valor),
-      emocion = factor(emocion, levels = emociones)
+      emocion = factor(emocion, levels = emociones),
+      etiqueta_es = etiquetas.emociones[emocion]  
     )
   
   etiquetas = datos.largos %>%
@@ -63,7 +76,7 @@ hacer.flor <- function(fila, emociones, paleta.emociones) {
     geom_col(width = 0.95, alpha = 0.9, show.legend = FALSE) +
     geom_text(
       data = etiquetas,
-      aes(label = emocion, y = valor + margen),
+      aes(x = emocion, y = valor + margen, label = etiqueta_es),
       size = 4, vjust = 0
     ) +
     scale_fill_manual(values = paleta.emociones) +
