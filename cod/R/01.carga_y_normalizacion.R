@@ -21,9 +21,8 @@ subtitulos.raw <- read_srt(here("data", "raw", "input", "subtitulos.srt"))
 
 #se importa el lexicón (diccionario de emociones) inicial para poder limpiarlo, 
 #dado que como originalmente se encontraba en inglés y se hizo una traducción
-#a español, muchas palabras con varios significados resultaron duplicadad,
-#por tanto esto debe ser eliminado (todo esto se documentará en el README) 
-#posteriormente
+#a español, muchas palabras con varios significados resultaron duplicadas
+
 lexicon.raw <- read.table(here("data","raw","Spanish-NRC-EmoLex.txt"),
                                     sep = "\t", header = TRUE)
 
@@ -54,6 +53,26 @@ lexicon.normalizado <- lexicon.raw %>%
     positive = mayoria(positive, n()),
   ) %>% 
   rename(token = Spanish.Word)
+
+# ajustes manuales pequeños al lexicón 
+lexicon.manual <- data.frame(
+  token = c("continuar","avanzar","correr","arder","entregar","corazon"),
+  n = c(1,1,1,1,1,1),
+  joy = c(0,0,0,0,0,1),
+  anger = c(0,0,0,0,0,0),
+  anticipation = c(1,1,1,0,1,0),
+  disgust = c(0,0,0,0,0,0),
+  fear = c(0,0,1,1,0,0),
+  sadness = c(0,0,0,0,0,0),
+  surprise = c(0,0,0,0,0,0),
+  trust = c(1,0,0,0,1,1),
+  negative = c(0,0,1,1,0,0),
+  positive = c(1,1,0,0,1,1)
+)
+
+lexicon.normalizado <- lexicon.normalizado %>% 
+  filter(!token %in% lexicon.manual$token) %>% 
+  bind_rows(lexicon.manual)
 
 limpieza <- function(linea) {
   x = linea
