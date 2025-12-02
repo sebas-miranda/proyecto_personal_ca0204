@@ -15,7 +15,7 @@ subtitulos.raw <- read_srt(here("data", "raw", "input", "subtitulos.srt"))
 subtitulos.raw <- subtitulos.raw %>% 
   rename (subtitle.id = n)
 subtitulos.raw$subtitle <- replace_html(subtitulos.raw$subtitle,symbol = FALSE) #se quitan las anotaciones para hacerlo legible como texto
-#nota: se conservan todas las puntuaciones para ver las frases lo más "raw" posibles
+subtitulos.raw$subtitle <- str_replace_all( subtitulos.raw$subtitle,"\\{[^}]*\\}", "")
 
 
 lexicon.normalizado <- read.csv(here("data", "processed", "lexicon.normalizado.csv"))
@@ -83,13 +83,13 @@ for (emo in emociones) {
 mult.exclamacion.base <- data.frame(
   emocion = c("joy", "anger", "anticipation", "disgust", "fear",
               "sadness", "surprise", "trust", "negative", "positive"),
-  puntajes = c(0.10, 0.07, 0.04, 0.03, 0.06, 0.04, 0.15, 0.03, 0.06, 0.08)
+  puntajes = c(0.05, 0.07, 0.04, 0.03, 0.03, 0.04, 0.10, 0.03, 0.07, 0.04)
 )
 
 mult.interrogacion.base <- data.frame(
   emocion = c("joy", "anger", "anticipation", "disgust", "fear",
               "sadness", "surprise", "trust", "negative", "positive"),
-  puntajes = c(0.02, 0.03, 0.12, 0.01, 0.06, 0.03, 0.10, 0.02, 0.03, 0.01)
+  puntajes = c(0.02, 0.03, 0.12, 0.01, 0.04, 0.03, 0.9, 0.02, 0.03, 0.01)
 )
 
 
