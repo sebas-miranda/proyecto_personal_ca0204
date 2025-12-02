@@ -49,7 +49,7 @@ radial_labels <- data.frame(
   label = breaks_rad
 )
 
-ggplot(
+grafico.resumen.radial <- ggplot(
   pivot_longer(emociones.suma, all_of(solo.emociones),
                names_to = "emocion", values_to = "valor"),
   aes(emocion, valor, fill = emocion)) +
@@ -76,9 +76,10 @@ ggplot(
     legend.position = "none"
   )
 
+ggsave(here("res", "resumen.emociones.radial.png"), grafico.resumen.radial)
 
 # gráfico 2: solo pos/neg 
-ggplot(
+grafico.resumen.posneg <- ggplot(
   pivot_longer(emociones.suma, c("positive","negative"),
                names_to = "emocion", values_to = "valor"),
   aes(emocion, valor, fill = emocion)) +
@@ -89,4 +90,7 @@ ggplot(
     title = "Resumen emociones"
   ) +
   theme(legend.position = "none")
+
+ggsave(here("res", "resumen.emociones.posneg.png"), grafico.resumen.posneg)
+
 
