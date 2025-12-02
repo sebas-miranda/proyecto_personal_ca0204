@@ -1,0 +1,1151 @@
+1
+00:00:20,877 --> 00:00:22,257
+<font face="Lato Bold" size="24">Oigan…</font>
+
+2
+00:00:25,837 --> 00:00:27,987
+<font face="Lato Bold" size="24">Está lanzando casas.</font>
+
+3
+00:00:28,677 --> 00:00:31,707
+<font face="Lato Bold" size="24">Entre esas estará…</font>
+
+4
+00:00:32,507 --> 00:00:36,787
+<font face="Lato Bold" size="24">¡Estará la casa de Eren!</font>
+
+5
+00:00:38,417 --> 00:00:40,967
+<font face="Lato Bold" size="24">Sasha, dale un golpe a Connie.</font>
+
+6
+00:00:42,947 --> 00:00:45,357
+<font face="Lato Bold" size="24">Parece que no sabe dónde estamos.</font>
+
+7
+00:00:45,357 --> 00:00:46,467
+<font face="Lato Bold" size="24">Sí.</font>
+
+8
+00:00:46,467 --> 00:00:51,567
+<font face="Lato Bold" size="24">Pretende convertir Shiganshina en un
+mar de llamas usando esos escombros.</font>
+
+9
+00:00:52,967 --> 00:00:54,327
+<font face="Lato Bold" size="24"><i>Ese desgraciado…</i></font>
+
+10
+00:00:55,127 --> 00:00:59,127
+<font face="Lato Bold" size="24"><i>esta vez incendió mi ciudad.</i></font>
+
+11
+00:01:00,877 --> 00:01:04,207
+<font face="Lato Bold" size="24">¡Armin, el fuego se acerca!
+¡Danos órdenes!</font>
+
+12
+00:01:04,207 --> 00:01:05,307
+<font face="Lato Bold" size="24">¡Date prisa!</font>
+
+13
+00:01:07,057 --> 00:01:12,637
+<font face="Lato Bold" size="24">Sé que mientras tiemblas
+no puedes hacer nada.</font>
+
+14
+00:01:15,877 --> 00:01:18,477
+<font face="Lato Bold" size="24">Jean, hazlo por mí.</font>
+
+15
+00:01:20,307 --> 00:01:23,977
+<font face="Lato Bold" size="24">Yo no sé lo que deberíamos hacer.</font>
+
+16
+00:01:24,477 --> 00:01:28,167
+<font face="Lato Bold" size="24">Antes fallé al prever
+lo que haría Bertholdt.</font>
+
+17
+00:01:28,667 --> 00:01:30,987
+<font face="Lato Bold" size="24">Jean, tú estás más capacitado.</font>
+
+18
+00:01:35,307 --> 00:01:37,367
+<font face="Lato Bold" size="24">¡Vamos hacia el río!</font>
+
+19
+00:01:38,107 --> 00:01:41,327
+<font face="Lato Bold" size="24">¡Súbanse a Eren! ¡Reserven el gas!</font>
+
+20
+00:01:45,967 --> 00:01:50,137
+<font face="Lato Bold" size="24">Eren, tendremos que distraer
+a Bertholdt en algún momento,</font>
+
+21
+00:01:50,137 --> 00:01:52,637
+<font face="Lato Bold" size="24">pero por ahora intenta que no te vea.</font>
+
+22
+00:01:53,567 --> 00:01:54,727
+<font face="Lato Bold" size="24">Armin.</font>
+
+23
+00:01:56,437 --> 00:02:01,747
+<font face="Lato Bold" size="24">Puedo ver la situación con claridad,
+pero no urdir ningún plan que nos salve.</font>
+
+24
+00:02:02,307 --> 00:02:04,727
+<font face="Lato Bold" size="24">Al final dependeremos de ti.</font>
+
+25
+00:03:39,997 --> 00:03:44,997
+<font face="Lato Bold" size="20"><b>{\an8}Partido perfecto</b></font>
+
+26
+00:03:50,387 --> 00:03:52,227
+<font face="Lato Bold" size="24">Acabé con los de este lado.</font>
+
+27
+00:03:52,227 --> 00:03:55,797
+<font face="Lato Bold" size="24">Los únicos inteligentes
+son los que están aquí.</font>
+
+28
+00:03:56,507 --> 00:04:00,157
+<font face="Lato Bold" size="24">Pero ¿cómo vamos a acabar
+con el titán bestia?</font>
+
+29
+00:04:00,157 --> 00:04:03,937
+<font face="Lato Bold" size="24">Está ahí quieto sin mover un músculo.</font>
+
+30
+00:04:04,247 --> 00:04:06,937
+<font face="Lato Bold" size="24">Sí. Parece que es un cobarde.</font>
+
+31
+00:04:07,527 --> 00:04:10,147
+<font face="Lato Bold" size="24">No tiene pelotas, al fin y al cabo.</font>
+
+32
+00:04:10,677 --> 00:04:12,207
+<font face="Lato Bold" size="24">Descansa.</font>
+
+33
+00:04:12,207 --> 00:04:14,847
+<font face="Lato Bold" size="24">Acabaremos con los inteligentes.</font>
+
+34
+00:04:14,847 --> 00:04:15,957
+<font face="Lato Bold" size="24">¡Vamos!</font>
+
+35
+00:04:15,957 --> 00:04:17,067
+<font face="Lato Bold" size="24">¡Recibido!</font>
+
+36
+00:04:19,727 --> 00:04:20,947
+<font face="Lato Bold" size="24"><i>Rayos…</i></font>
+
+37
+00:04:20,947 --> 00:04:25,017
+<font face="Lato Bold" size="24"><i>¿Cómo estarán
+después de la explosión de antes?</i></font>
+
+38
+00:04:25,527 --> 00:04:27,577
+<font face="Lato Bold" size="24"><i>¿Hange y los demás la evitaron?</i></font>
+
+39
+00:04:28,167 --> 00:04:30,237
+<font face="Lato Bold" size="24"><i>Debería ir con ellos en cuanto…</i></font>
+
+40
+00:05:01,147 --> 00:05:04,147
+<font face="Lato Bold" size="24">La lancé demasiado alta.</font>
+
+41
+00:05:05,037 --> 00:05:07,667
+<font face="Lato Bold" size="24">Déjala ahí.</font>
+
+42
+00:05:11,677 --> 00:05:14,417
+<font face="Lato Bold" size="24">La primera bola es de práctica.</font>
+
+43
+00:05:15,587 --> 00:05:19,057
+<font face="Lato Bold" size="24">Aspiro a un partido perfecto.</font>
+
+44
+00:05:20,427 --> 00:05:23,967
+<font face="Lato Bold" size="24">¡Atacan desde el frente!
+¡Escóndanse a la sombra de algo!</font>
+
+45
+00:05:24,727 --> 00:05:25,807
+<font face="Lato Bold" size="24">¿Qué pasa?</font>
+
+46
+00:05:25,807 --> 00:05:29,037
+<font face="Lato Bold" size="24">Maldición. ¡Chicos!</font>
+
+47
+00:05:56,367 --> 00:05:58,777
+<font face="Lato Bold" size="24">¿Eso es un bombardeo?</font>
+
+48
+00:05:58,777 --> 00:06:00,757
+<font face="Lato Bold" size="24">¿Tienen cañones?</font>
+
+49
+00:06:00,757 --> 00:06:02,847
+<font face="Lato Bold" size="24">Pues tienen más de cien.</font>
+
+50
+00:06:02,847 --> 00:06:05,467
+<font face="Lato Bold" size="24">¡Cálmense o alterarán a los caballos!</font>
+
+51
+00:06:05,717 --> 00:06:07,667
+<font face="Lato Bold" size="24">¡Están tirando piedras!</font>
+
+52
+00:06:07,667 --> 00:06:08,847
+<font face="Lato Bold" size="24">¡Capitán Levi!</font>
+
+53
+00:06:09,217 --> 00:06:11,767
+<font face="Lato Bold" size="24">¡Lleven a los caballos hasta la muralla!</font>
+
+54
+00:06:12,727 --> 00:06:13,897
+<font face="Lato Bold" size="24">¡Recibido!</font>
+
+55
+00:06:15,507 --> 00:06:18,197
+<font face="Lato Bold" size="24">¡Rápido! ¡Aprovechen las coberturas!</font>
+
+56
+00:06:24,167 --> 00:06:26,527
+<font face="Lato Bold" size="24">¡Levántate! ¿Es que quieres morir?</font>
+
+57
+00:06:28,277 --> 00:06:29,257
+<font face="Lato Bold" size="24">¡Comandante!</font>
+
+58
+00:06:30,457 --> 00:06:31,497
+<font face="Lato Bold" size="24">¿Situación?</font>
+
+59
+00:06:31,967 --> 00:06:33,317
+<font face="Lato Bold" size="24">La peor posible.</font>
+
+60
+00:06:33,317 --> 00:06:36,607
+<font face="Lato Bold" size="24">Esas piedras hicieron pedazos
+las casas delanteras.</font>
+
+61
+00:06:37,027 --> 00:06:40,717
+<font face="Lato Bold" size="24">Si continúa lanzando,
+dejará esta zona desierta.</font>
+
+62
+00:06:40,717 --> 00:06:43,007
+<font face="Lato Bold" size="24">Nos dejará sin escondites.</font>
+
+63
+00:06:43,547 --> 00:06:46,467
+<font face="Lato Bold" size="24">¿No podemos huir
+al otro lado de la muralla?</font>
+
+64
+00:06:46,467 --> 00:06:47,347
+<font face="Lato Bold" size="24">No.</font>
+
+65
+00:06:47,687 --> 00:06:51,117
+<font face="Lato Bold" size="24">El titán colosal se acerca hacia aquí</font>
+
+66
+00:06:51,117 --> 00:06:53,707
+<font face="Lato Bold" size="24">mientras lo prende todo en llamas.</font>
+
+67
+00:06:54,897 --> 00:06:59,857
+<font face="Lato Bold" size="24">Y aunque crucemos la muralla,
+los caballos no pueden seguirnos.</font>
+
+68
+00:07:00,437 --> 00:07:03,867
+<font face="Lato Bold" size="24">Aunque aguantemos ahora, no venceremos.</font>
+
+69
+00:07:04,277 --> 00:07:07,367
+<font face="Lato Bold" size="24">¿Dónde está Hange? ¿Eren está a salvo?</font>
+
+70
+00:07:08,367 --> 00:07:09,757
+<font face="Lato Bold" size="24">No lo sé.</font>
+
+71
+00:07:09,757 --> 00:07:12,987
+<font face="Lato Bold" size="24">Pero muchos sufrieron
+la explosión de antes.</font>
+
+72
+00:07:13,617 --> 00:07:15,877
+<font face="Lato Bold" size="24">Sufrimos innumerables bajas.</font>
+
+73
+00:07:16,967 --> 00:07:22,417
+<font face="Lato Bold" size="24">El titán bestia controló a los pequeños
+para reunirnos en un lugar.</font>
+
+74
+00:07:22,987 --> 00:07:29,057
+<font face="Lato Bold" size="24">Los escuadrones de Dirk, Marlene y Klaus
+se enfrentaban a los titanes menores</font>
+
+75
+00:07:29,457 --> 00:07:31,817
+<font face="Lato Bold" size="24">y fallecieron en el primer lanzamiento.</font>
+
+76
+00:07:32,837 --> 00:07:39,357
+<font face="Lato Bold" size="24">En otras palabras, en la parte interior
+de la muralla quedamos los reclutas,</font>
+
+77
+00:07:39,767 --> 00:07:43,707
+<font face="Lato Bold" size="24">el capitán Levi y yo.</font>
+
+78
+00:07:48,857 --> 00:07:50,867
+<font face="Lato Bold" size="24">¡Es el fin!</font>
+
+79
+00:07:50,867 --> 00:07:54,167
+<font face="Lato Bold" size="24">Erwin, ¿tienes algún plan?</font>
+
+80
+00:07:57,927 --> 00:07:59,247
+<font face="Lato Bold" size="24">¡Grita, Eren!</font>
+
+81
+00:07:59,247 --> 00:08:01,917
+<font face="Lato Bold" size="24">¡Que no se acerque más a la muralla!</font>
+
+82
+00:08:10,817 --> 00:08:11,807
+<font face="Lato Bold" size="24">¡Nos vio!</font>
+
+83
+00:08:16,077 --> 00:08:18,637
+<font face="Lato Bold" size="24">¿Nos ignora?</font>
+
+84
+00:08:19,077 --> 00:08:21,687
+<font face="Lato Bold" size="24">¿Qué hacemos, Jean? A este paso…</font>
+
+85
+00:08:22,077 --> 00:08:23,467
+<font face="Lato Bold" size="24">Lo sé.</font>
+
+86
+00:08:23,467 --> 00:08:26,447
+<font face="Lato Bold" size="24">¡Eren, ve a detener sus piernas!</font>
+
+87
+00:08:29,767 --> 00:08:32,617
+<font face="Lato Bold" size="24">¿Cómo vamos a derrotarlo?</font>
+
+88
+00:08:33,037 --> 00:08:35,957
+<font face="Lato Bold" size="24">El vapor inutiliza
+el equipo de maniobras.</font>
+
+89
+00:08:36,507 --> 00:08:37,747
+<font face="Lato Bold" size="24">¿Verdad?</font>
+
+90
+00:08:38,767 --> 00:08:40,457
+<font face="Lato Bold" size="24">Ya lo sé.</font>
+
+91
+00:08:41,057 --> 00:08:44,157
+<font face="Lato Bold" size="24">Pero tenemos que probar lo que podamos.</font>
+
+92
+00:08:44,157 --> 00:08:46,517
+<font face="Lato Bold" size="24">¡Revelaremos su punto débil!</font>
+
+93
+00:08:46,517 --> 00:08:49,427
+<font face="Lato Bold" size="24">Yo me encargo. Ustedes distráiganlo.</font>
+
+94
+00:08:49,877 --> 00:08:51,737
+<font face="Lato Bold" size="24">Connie, las lanzas relámpago.</font>
+
+95
+00:08:51,737 --> 00:08:53,427
+<font face="Lato Bold" size="24">¡Sí!</font>
+
+96
+00:08:53,837 --> 00:08:56,877
+<font face="Lato Bold" size="24">Armin, tú obsérvalo desde la distancia.</font>
+
+97
+00:08:57,417 --> 00:08:59,157
+<font face="Lato Bold" size="24">Deja de llorar.</font>
+
+98
+00:08:59,157 --> 00:09:01,897
+<font face="Lato Bold" size="24">Confía en que encontrarás alguna pista.</font>
+
+99
+00:09:04,947 --> 00:09:06,737
+<font face="Lato Bold" size="24">¡Ahora! ¡Dispérsense!</font>
+
+100
+00:09:09,527 --> 00:09:11,977
+<font face="Lato Bold" size="24"><i>No me mires con tanto desprecio.</i></font>
+
+101
+00:09:11,977 --> 00:09:17,027
+<font face="Lato Bold" size="24"><i>¡Tu único poder es ser enorme!</i></font>
+
+102
+00:09:33,817 --> 00:09:35,227
+<font face="Lato Bold" size="24">¡Lo está empujando!</font>
+
+103
+00:09:35,227 --> 00:09:37,977
+<font face="Lato Bold" size="24">¡Vamos, Eren! ¡Túmbalo!</font>
+
+104
+00:09:38,557 --> 00:09:40,937
+<font face="Lato Bold" size="24"><i>Tiene que haber alguna forma.</i></font>
+
+105
+00:09:44,787 --> 00:09:45,707
+<font face="Lato Bold" size="24"><i>¿Eh?</i></font>
+
+106
+00:09:56,237 --> 00:09:57,677
+<font face="Lato Bold" size="24">¡Eren!</font>
+
+107
+00:10:01,747 --> 00:10:04,917
+<font face="Lato Bold" size="24">¿Ese es Eren?</font>
+
+108
+00:10:05,457 --> 00:10:09,967
+<font face="Lato Bold" size="24">¿Lo envió volando
+hasta lo alto de la muralla?</font>
+
+109
+00:10:13,527 --> 00:10:14,957
+<font face="Lato Bold" size="24">Eren no se mueve.</font>
+
+110
+00:10:14,957 --> 00:10:18,597
+<font face="Lato Bold" size="24">No está muerto. Céntrate
+en el monstruo que tienes delante.</font>
+
+111
+00:10:19,237 --> 00:10:21,937
+<font face="Lato Bold" size="24">Nos acercamos demasiado.</font>
+
+112
+00:10:21,937 --> 00:10:24,857
+<font face="Lato Bold" size="24">Eso es lo que pasa
+si no tenemos un plan.</font>
+
+113
+00:10:25,707 --> 00:10:29,777
+<font face="Lato Bold" size="24">Si no pensamos en algo
+que nos dé la ventaja,</font>
+
+114
+00:10:30,187 --> 00:10:35,827
+<font face="Lato Bold" size="24">se acabaron la operación, nuestras vidas
+y el futuro de la humanidad.</font>
+
+115
+00:10:36,637 --> 00:10:41,247
+<font face="Lato Bold" size="24">Pero no vamos a dejar
+que nos mates a todos sin más.</font>
+
+116
+00:10:41,617 --> 00:10:43,537
+<font face="Lato Bold" size="24">¡Ataquemos!</font>
+
+117
+00:10:47,677 --> 00:10:49,807
+<font face="Lato Bold" size="24">¡Aún no conoce las lanzas!</font>
+
+118
+00:10:49,807 --> 00:10:52,487
+<font face="Lato Bold" size="24">Connie, Sasha y yo lo distraeremos.</font>
+
+119
+00:10:52,487 --> 00:10:54,607
+<font face="Lato Bold" size="24">¡Mikasa disparará mientras tanto!</font>
+
+120
+00:10:54,607 --> 00:10:55,467
+<font face="Lato Bold" size="24">¡Recibido!</font>
+
+121
+00:10:57,057 --> 00:11:00,157
+<font face="Lato Bold" size="24">¡Te voy a arrancar los ojos, idiota!</font>
+
+122
+00:11:00,157 --> 00:11:02,017
+<font face="Lato Bold" size="24">¡Tonto!</font>
+
+123
+00:11:02,017 --> 00:11:04,187
+<font face="Lato Bold" size="24">¡Bicho raro!</font>
+
+124
+00:11:05,477 --> 00:11:07,777
+<font face="Lato Bold" size="24"><i>Es una provocación muy simple.</i></font>
+
+125
+00:11:08,127 --> 00:11:10,737
+<font face="Lato Bold" size="24"><i>Pero si las lanzas relámpago le dan…</i></font>
+
+126
+00:11:31,547 --> 00:11:32,857
+<font face="Lato Bold" size="24">¡Chicos!</font>
+
+127
+00:11:33,787 --> 00:11:35,407
+<font face="Lato Bold" size="24">No funciona.</font>
+
+128
+00:11:35,407 --> 00:11:38,467
+<font face="Lato Bold" size="24">Ese vapor repele las lanzas relámpago.</font>
+
+129
+00:11:40,477 --> 00:11:41,427
+<font face="Lato Bold" size="24">¡Connie!</font>
+
+130
+00:11:41,427 --> 00:11:44,347
+<font face="Lato Bold" size="24">Inhalé un poco y me quemé la garganta.</font>
+
+131
+00:11:45,417 --> 00:11:47,607
+<font face="Lato Bold" size="24">¡Mikasa! Estás sangrando.</font>
+
+132
+00:11:47,607 --> 00:11:51,447
+<font face="Lato Bold" size="24">Estoy bien, solo me rozó
+un pedazo de las lanzas.</font>
+
+133
+00:11:51,447 --> 00:11:52,987
+<font face="Lato Bold" size="24">¿Se te ocurrió algo?</font>
+
+134
+00:11:54,927 --> 00:11:57,507
+<font face="Lato Bold" size="24">¿Podemos contraatacar de algún modo?</font>
+
+135
+00:12:01,547 --> 00:12:02,877
+<font face="Lato Bold" size="24">No.</font>
+
+136
+00:12:19,967 --> 00:12:24,977
+<font face="Lato Bold" size="20"><b>{\an8}Información pública actualmente</b></font>
+
+137
+00:12:19,967 --> 00:12:24,977
+<font face="Lato Bold" size="20" color="#000000"><b>{\an8}<font size="16">Vapor caliente del titán colosal
+Se cree que lo genera
+al quemar tejido muscular
+y, por tanto, es limitado.</font></b></font>
+
+138
+00:12:38,857 --> 00:12:41,627
+<font face="Lato Bold" size="24">El titán bestia
+está apuntando hacia aquí.</font>
+
+139
+00:12:41,627 --> 00:12:43,907
+<font face="Lato Bold" size="24">No tardará en llenar esto de agujeros.</font>
+
+140
+00:12:44,947 --> 00:12:49,717
+<font face="Lato Bold" size="24">Si no nos queda forma de contraatacar,</font>
+
+141
+00:12:49,717 --> 00:12:51,657
+<font face="Lato Bold" size="24">preparemos la huida.</font>
+
+142
+00:12:52,277 --> 00:12:54,377
+<font face="Lato Bold" size="24">Ve a despertar a Eren.</font>
+
+143
+00:12:54,687 --> 00:12:57,427
+<font face="Lato Bold" size="24">Súbete a él
+con unos cuantos más y huyan.</font>
+
+144
+00:12:58,077 --> 00:13:00,427
+<font face="Lato Bold" size="24">Que sobreviva alguien.</font>
+
+145
+00:13:01,857 --> 00:13:03,927
+<font face="Lato Bold" size="24">Huyeron unos caballos.</font>
+
+146
+00:13:04,367 --> 00:13:05,937
+<font face="Lato Bold" size="24">¡Tú estabas al cargo!</font>
+
+147
+00:13:05,937 --> 00:13:08,307
+<font face="Lato Bold" size="24">¡Cállate! ¡Ya no sirven de nada!</font>
+
+148
+00:13:08,307 --> 00:13:09,517
+<font face="Lato Bold" size="24">¿Cómo dices?</font>
+
+149
+00:13:10,107 --> 00:13:13,967
+<font face="Lato Bold" size="24">Los más fuertes de la Legión
+murieron en un instante.</font>
+
+150
+00:13:14,417 --> 00:13:16,497
+<font face="Lato Bold" size="24">¡Tú también lo sabes!</font>
+
+151
+00:13:16,807 --> 00:13:19,147
+<font face="Lato Bold" size="24">Aunque protejamos a los caballos,</font>
+
+152
+00:13:19,527 --> 00:13:22,787
+<font face="Lato Bold" size="24">¡no quedará nadie
+que vuelva a casa en ellos!</font>
+
+153
+00:13:27,787 --> 00:13:30,147
+<font face="Lato Bold" size="24">Entendía la lógica.</font>
+
+154
+00:13:30,707 --> 00:13:36,737
+<font face="Lato Bold" size="24">Si nos quedábamos en las murallas,
+un día los titanes nos aniquilarían.</font>
+
+155
+00:13:37,257 --> 00:13:40,437
+<font face="Lato Bold" size="24">Alguien tenía que actuar,
+aunque fuera peligroso.</font>
+
+156
+00:13:41,037 --> 00:13:47,097
+<font face="Lato Bold" size="24">Hace falta gente capaz de sacrificarse
+para no sacrificar a otros.</font>
+
+157
+00:13:47,447 --> 00:13:50,117
+<font face="Lato Bold" size="24">"¿Quiénes serán
+esos valerosos soldados?".</font>
+
+158
+00:13:50,117 --> 00:13:52,357
+<font face="Lato Bold" size="24">Cuando preguntaron eso…</font>
+
+159
+00:13:52,677 --> 00:13:56,857
+<font face="Lato Bold" size="24">pensé que yo era uno.</font>
+
+160
+00:13:57,727 --> 00:14:02,297
+<font face="Lato Bold" size="24">Pero no esperaba que mi muerte</font>
+
+161
+00:14:02,997 --> 00:14:07,077
+<font face="Lato Bold" size="24">no fuera a tener sentido alguno.</font>
+
+162
+00:14:07,877 --> 00:14:13,507
+<font face="Lato Bold" size="24">En comparación, hay mucha más gente
+que muere en vano que no.</font>
+
+163
+00:14:14,217 --> 00:14:19,947
+<font face="Lato Bold" size="24">¿Por qué pensé
+que yo iba a ser diferente?</font>
+
+164
+00:14:25,347 --> 00:14:29,307
+<font face="Lato Bold" size="24">¿Y si hacemos que los reclutas
+y los del escuadrón de Hange restantes</font>
+
+165
+00:14:29,657 --> 00:14:31,347
+<font face="Lato Bold" size="24">se dispersaran en caballo?</font>
+
+166
+00:14:31,667 --> 00:14:35,727
+<font face="Lato Bold" size="24">Eren saldrá corriendo
+mientras los distraen.</font>
+
+167
+00:14:36,507 --> 00:14:39,357
+<font face="Lato Bold" size="24">¿Qué harás tú, Levi?</font>
+
+168
+00:14:39,927 --> 00:14:43,117
+<font face="Lato Bold" size="24">Enfrentarme al titán bestia.
+Si lo atrai…</font>
+
+169
+00:14:43,347 --> 00:14:46,617
+<font face="Lato Bold" size="24">Imposible. No podrás ni acercarte.</font>
+
+170
+00:14:47,187 --> 00:14:48,437
+<font face="Lato Bold" size="24">Me lo imagino.</font>
+
+171
+00:14:48,967 --> 00:14:53,627
+<font face="Lato Bold" size="24">Pero si Eren y tú regresan con vida,
+aún habrá esperanza.</font>
+
+172
+00:14:54,107 --> 00:14:57,417
+<font face="Lato Bold" size="24">¿No crees que llegamos a ese punto?</font>
+
+173
+00:14:58,457 --> 00:14:59,857
+<font face="Lato Bold" size="24">Es una gran derrota.</font>
+
+174
+00:15:00,617 --> 00:15:06,127
+<font face="Lato Bold" size="24">Si te soy sincero,
+creo que no sobrevivirá nadie.</font>
+
+175
+00:15:07,077 --> 00:15:10,907
+<font face="Lato Bold" size="24">Sí. Si no hubiera
+ninguna forma de contraatacar.</font>
+
+176
+00:15:14,837 --> 00:15:15,937
+<font face="Lato Bold" size="24">¿Y la hay?</font>
+
+177
+00:15:16,617 --> 00:15:17,857
+<font face="Lato Bold" size="24">Sí.</font>
+
+178
+00:15:18,267 --> 00:15:20,147
+<font face="Lato Bold" size="24">¿Por qué no lo dijiste antes?</font>
+
+179
+00:15:20,647 --> 00:15:23,277
+<font face="Lato Bold" size="24">¿Por qué te callaste
+con esa cara de asco?</font>
+
+180
+00:15:24,127 --> 00:15:25,817
+<font face="Lato Bold" size="24">Si esto sale bien,</font>
+
+181
+00:15:26,247 --> 00:15:29,617
+<font face="Lato Bold" size="24">es posible que puedas matar
+al titán bestia.</font>
+
+182
+00:15:30,147 --> 00:15:34,217
+<font face="Lato Bold" size="24">Sacrificando mi vida
+y la de los reclutas.</font>
+
+183
+00:15:39,507 --> 00:15:41,147
+<font face="Lato Bold" size="24">Tienes razón.</font>
+
+184
+00:15:41,857 --> 00:15:44,617
+<font face="Lato Bold" size="24">De todos modos,
+la mayoría moriremos aquí.</font>
+
+185
+00:15:45,987 --> 00:15:49,857
+<font face="Lato Bold" size="24">Es mucho más probable que muramos todos.</font>
+
+186
+00:15:50,857 --> 00:15:56,017
+<font face="Lato Bold" size="24">Debemos apostar por la victoria
+del modo que sea necesario.</font>
+
+187
+00:15:57,707 --> 00:16:01,617
+<font face="Lato Bold" size="24">Para eso tendré que pedirles
+a esos jóvenes que mueran.</font>
+
+188
+00:16:02,057 --> 00:16:06,037
+<font face="Lato Bold" size="24">Tendré que inventar una buena excusa,
+como un estafador.</font>
+
+189
+00:16:06,857 --> 00:16:10,967
+<font face="Lato Bold" size="24">Si no voy en cabeza, nadie me seguirá.</font>
+
+190
+00:16:11,527 --> 00:16:13,707
+<font face="Lato Bold" size="24">Seré el primero en morir.</font>
+
+191
+00:16:14,327 --> 00:16:18,837
+<font face="Lato Bold" size="24">Sin saber qué hay en el sótano.</font>
+
+192
+00:16:28,437 --> 00:16:32,217
+<font face="Lato Bold" size="24">Quiero ir a ese sótano.</font>
+
+193
+00:16:33,417 --> 00:16:38,657
+<font face="Lato Bold" size="24">Llegué hasta aquí
+pensando en que llegaría este día.</font>
+
+194
+00:16:39,877 --> 00:16:43,567
+<font face="Lato Bold" size="24">En que un día
+podría comprobar la respuesta.</font>
+
+195
+00:16:45,077 --> 00:16:49,107
+<font face="Lato Bold" size="24">Muchas veces pensé
+que sería mejor morir.</font>
+
+196
+00:16:49,677 --> 00:16:54,407
+<font face="Lato Bold" size="24">Pero el sueño de mi padre
+y el mío me venía a la mente.</font>
+
+197
+00:16:55,057 --> 00:17:00,237
+<font face="Lato Bold" size="24">Ahora la respuesta
+está al alcance de mi mano.</font>
+
+198
+00:17:03,167 --> 00:17:05,257
+<font face="Lato Bold" size="24">Está justo ahí.</font>
+
+199
+00:17:08,587 --> 00:17:10,107
+<font face="Lato Bold" size="24">Pero, Levi,</font>
+
+200
+00:17:11,927 --> 00:17:14,877
+<font face="Lato Bold" size="24">¿puedes ver a nuestros compañeros?</font>
+
+201
+00:17:18,787 --> 00:17:21,147
+<font face="Lato Bold" size="24">Ellos nos observan.</font>
+
+202
+00:17:21,667 --> 00:17:25,027
+<font face="Lato Bold" size="24">Quieren saber qué pasó
+con los corazones que entregaron.</font>
+
+203
+00:17:25,837 --> 00:17:28,367
+<font face="Lato Bold" size="24">Porque la batalla aún no terminó.</font>
+
+204
+00:17:35,567 --> 00:17:40,997
+<font face="Lato Bold" size="24">Quizás todo sea
+una ilusión infantil en mi cabeza.</font>
+
+205
+00:17:46,967 --> 00:17:49,167
+<font face="Lato Bold" size="24">Peleaste con valor.</font>
+
+206
+00:17:49,907 --> 00:17:53,257
+<font face="Lato Bold" size="24">Gracias a ti llegamos hasta aquí.</font>
+
+207
+00:17:55,237 --> 00:17:56,987
+<font face="Lato Bold" size="24">Pero sé lo que elijo.</font>
+
+208
+00:17:59,107 --> 00:18:01,737
+<font face="Lato Bold" size="24">Abandona tu sueño y muere.</font>
+
+209
+00:18:01,737 --> 00:18:04,187
+<font face="Lato Bold" size="24">Guía a los reclutas al infierno.</font>
+
+210
+00:18:05,107 --> 00:18:08,217
+<font face="Lato Bold" size="24">Yo mataré al titán bestia.</font>
+
+211
+00:18:30,177 --> 00:18:31,757
+<font face="Lato Bold" size="24">¡A la carga!</font>
+
+212
+00:18:36,837 --> 00:18:41,387
+<font face="Lato Bold" size="24">Imaginé que no se rendirían sin pelear,</font>
+
+213
+00:18:41,937 --> 00:18:43,687
+<font face="Lato Bold" size="24">pero ¿una carga directa?</font>
+
+214
+00:18:44,127 --> 00:18:47,527
+<font face="Lato Bold" size="24">Esperaba
+que se les ocurriera algo mejor.</font>
+
+215
+00:18:48,187 --> 00:18:50,697
+<font face="Lato Bold" size="24">¡Ahora! ¡Disparen!</font>
+
+216
+00:18:54,707 --> 00:18:55,967
+<font face="Lato Bold" size="24">¿Humo?</font>
+
+217
+00:18:56,617 --> 00:19:00,247
+<font face="Lato Bold" size="24">Es con el que envían las señales.</font>
+
+218
+00:19:00,817 --> 00:19:02,627
+<font face="Lato Bold" size="24">¡Ahí va! ¡Muévanse!</font>
+
+219
+00:19:06,787 --> 00:19:09,377
+<font face="Lato Bold" size="24">Les describiré
+nuestra última estrategia.</font>
+
+220
+00:19:09,377 --> 00:19:11,077
+<font face="Lato Bold" size="24">¡En fila!</font>
+
+221
+00:19:13,257 --> 00:19:18,427
+<font face="Lato Bold" size="24">Cargaremos
+contra el titán bestia a caballo.</font>
+
+222
+00:19:18,427 --> 00:19:21,687
+<font face="Lato Bold" size="24">Naturalmente,
+seremos una diana perfecta.</font>
+
+223
+00:19:22,547 --> 00:19:27,177
+<font face="Lato Bold" size="24">Dispararemos bengalas de humo
+cuando vaya a lanzar una piedra</font>
+
+224
+00:19:27,497 --> 00:19:30,447
+<font face="Lato Bold" size="24">para disminuir su precisión
+cuanto podamos.</font>
+
+225
+00:19:30,877 --> 00:19:35,797
+<font face="Lato Bold" size="24">Mientras nosotros llamamos su atención,
+Levi matará al titán bestia.</font>
+
+226
+00:19:36,117 --> 00:19:37,827
+<font face="Lato Bold" size="24">Ese es el plan.</font>
+
+227
+00:19:38,527 --> 00:19:39,447
+<font face="Lato Bold" size="24">¿Qué?</font>
+
+228
+00:19:40,107 --> 00:19:43,247
+<font face="Lato Bold" size="24">¿Que yo me acerque
+con el equipo de maniobras?</font>
+
+229
+00:19:43,657 --> 00:19:45,757
+<font face="Lato Bold" size="24">Está en campo abierto.</font>
+
+230
+00:19:45,757 --> 00:19:48,217
+<font face="Lato Bold" size="24">No hay árboles, casas ni nada que usar.</font>
+
+231
+00:19:48,657 --> 00:19:49,627
+<font face="Lato Bold" size="24">No.</font>
+
+232
+00:19:51,147 --> 00:19:55,017
+<font face="Lato Bold" size="24">Hay unos mástiles de la altura perfecta
+alineados hasta él.</font>
+
+233
+00:19:56,657 --> 00:20:01,747
+<font face="Lato Bold" size="24">Muévete por los titanes
+y ataca al titán bestia por sorpresa.</font>
+
+234
+00:20:09,147 --> 00:20:10,657
+<font face="Lato Bold" size="24"><i>Lo siento.</i></font>
+
+235
+00:20:18,387 --> 00:20:22,607
+<font face="Lato Bold" size="24">Quedándonos aquí
+seremos pasto de esas piedras.</font>
+
+236
+00:20:22,607 --> 00:20:24,457
+<font face="Lato Bold" size="24">Prepárense de inmediato.</font>
+
+237
+00:20:25,767 --> 00:20:30,547
+<font face="Lato Bold" size="24">¿Vamos a morir?</font>
+
+238
+00:20:31,567 --> 00:20:32,717
+<font face="Lato Bold" size="24">Sí.</font>
+
+239
+00:20:33,347 --> 00:20:39,467
+<font face="Lato Bold" size="24">Si vamos a morir de todas formas,
+¿nos pide que lo hagamos peleando?</font>
+
+240
+00:20:40,257 --> 00:20:41,267
+<font face="Lato Bold" size="24">Sí.</font>
+
+241
+00:20:41,717 --> 00:20:46,717
+<font face="Lato Bold" size="24">Si vamos a morir, no importa cómo.</font>
+
+242
+00:20:46,717 --> 00:20:50,727
+<font face="Lato Bold" size="24">Aunque lo desobedezcamos, dará igual.</font>
+
+243
+00:20:51,217 --> 00:20:52,687
+<font face="Lato Bold" size="24">Efectivamente.</font>
+
+244
+00:20:54,347 --> 00:20:56,247
+<font face="Lato Bold" size="24">No tiene ningún sentido.</font>
+
+245
+00:20:56,247 --> 00:20:58,767
+<font face="Lato Bold" size="24">Ya tengas sueños y esperanzas…</font>
+
+246
+00:20:59,967 --> 00:21:02,777
+<font face="Lato Bold" size="24">Ya vivas una vida feliz…</font>
+
+247
+00:21:03,767 --> 00:21:06,237
+<font face="Lato Bold" size="24">O ya te haga pedazos una piedra.</font>
+
+248
+00:21:06,927 --> 00:21:08,587
+<font face="Lato Bold" size="24">Todos morimos.</font>
+
+249
+00:21:09,927 --> 00:21:12,507
+<font face="Lato Bold" size="24">Entonces, ¿la vida no tiene sentido?</font>
+
+250
+00:21:13,307 --> 00:21:16,707
+<font face="Lato Bold" size="24">¿Nacer no tuvo sentido?</font>
+
+251
+00:21:17,867 --> 00:21:20,207
+<font face="Lato Bold" size="24">¿Nuestros compañeros caídos tampoco?</font>
+
+252
+00:21:20,657 --> 00:21:24,367
+<font face="Lato Bold" size="24">¿Esos soldados no sirvieron de nada?</font>
+
+253
+00:21:25,927 --> 00:21:27,557
+<font face="Lato Bold" size="24">¡No es así!</font>
+
+254
+00:21:27,557 --> 00:21:30,567
+<font face="Lato Bold" size="24">¡Somos nosotros
+los que le damos sentido!</font>
+
+255
+00:21:31,077 --> 00:21:34,067
+<font face="Lato Bold" size="24">¡Solo los vivos</font>
+
+256
+00:21:34,457 --> 00:21:38,317
+<font face="Lato Bold" size="24">podemos pensar en los que perecieron!</font>
+
+257
+00:21:38,817 --> 00:21:43,307
+<font face="Lato Bold" size="24">¡Moriremos aquí y le entregaremos
+nuestro sentido a los vivos!</font>
+
+258
+00:21:44,057 --> 00:21:49,577
+<font face="Lato Bold" size="24">¡Esa es la única forma de resistirse
+en este cruel mundo!</font>
+
+259
+00:21:50,127 --> 00:21:51,837
+<font face="Lato Bold" size="24">¡Avancen, soldados!</font>
+
+260
+00:21:52,367 --> 00:21:54,337
+<font face="Lato Bold" size="24">¡Griten, soldados!</font>
+
+261
+00:21:54,727 --> 00:21:57,377
+<font face="Lato Bold" size="24">¡Peleen, soldados!</font>
+
+262
+00:22:06,977 --> 00:22:09,977
+<font face="Lato Bold" size="20"><b>{\an8}Continuará</b></font>
+
+263
+00:23:39,987 --> 00:23:42,487
+<font face="Lato Bold" size="20"><b>{\an8}Avance</b></font>
+
+264
+00:23:40,347 --> 00:23:42,487
+<font face="Lato Bold" size="24">Por los amigos
+que entregaron su corazón.</font>
+
+265
+00:23:43,047 --> 00:23:45,237
+<font face="Lato Bold" size="24">Por los que abandonaron su sueño.</font>
+
+266
+00:23:45,727 --> 00:23:49,587
+<font face="Lato Bold" size="24">Correrán por ellos hasta que arda todo.</font>
+
+267
+00:23:50,107 --> 00:23:52,287
+<font face="Lato Bold" size="24">Sumidos en el miedo y la confusión.</font>
+
+268
+00:23:52,747 --> 00:23:55,237
+<font face="Lato Bold" size="24">Próximo episodio: "Héroe".</font>
+
+269
+00:23:52,747 --> 00:23:56,667
+<font face="Lato Bold" size="20"><b>{\an8}Héroe</b></font>
+
