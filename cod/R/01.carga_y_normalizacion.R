@@ -66,10 +66,12 @@ limpieza <- function(linea) {
   entre.parentesis = rex("(", except_any_of(")"), ")") #expresiones de la forma (cualquier cosa)
   guiones = rex(some_of("-", "–", "—"), zero_or_more(spaces)) #expresiones de dashes seguidos de 0 o más espacios
   espacios = rex(one_or_more(spaces)) #uno o más espacios seguidos
+  entre.llaves = rex("{", except_any_of("}"), "}")  # expresiones de la forma {cualquier cosa}
 
   x = stringr::str_replace_all(x, entre.corchetes, " ")
   x = str_replace_all(x, entre.parentesis, " ")
   x = str_replace_all(x, guiones, " ")
+  x = str_replace_all(x, entre.llaves, " ")
   x = str_remove_all(x, "\\\\") 
   x = str_remove_all(x, '"')
   x = str_remove_all(x, "¿")
