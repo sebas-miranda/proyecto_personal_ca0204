@@ -1,0 +1,150 @@
+---
+title: "Visualizador de emociones en escenas de películas y series"
+author: "Sebastián Miranda Ramírez C4H274"
+date: 5-12-2025
+format: pdf
+fontsize: 12pt
+mainfont: "Times New Roman"
+geometry: "margin = 2.54cm"
+include-in-header:
+  text: |
+      \usepackage{indentfirst}
+      \usepackage{hanging}
+      \usepackage{caption}
+      \usepackage{titling}
+      
+      \captionsetup[table]{name=Tabla}
+      \captionsetup[table]{font=small}
+      \captionsetup[figure]{name=Figura}
+      \captionsetup[figure]{font=small}
+      \setlength{\parindent}{1.27cm}
+      \setlength{\parskip}{0pt}
+      
+      
+      \addtokomafont{section}{\rmfamily}
+      \addtokomafont{subsection}{\rmfamily}
+      \addtokomafont{subsubsection}{\rmfamily}
+      
+      \pretitle{\begin{center}\fontsize{18pt}{20pt}\selectfont\bfseries}
+      \posttitle{\par\end{center}}
+  
+      \RedeclareSectionCommand[
+        beforeskip=2pt,
+        afterskip=2pt,
+        font=\rmfamily\normalsize\bfseries
+      ]{paragraph}
+---
+
+## Introducción
+
+En el procesamiento de lenguaje natural, podemos encontrar que el análisis de sentimiento y emociones es central para entender el cómo se expresan actitudes y estados afectivos en texto generado en entornos digitales (Nandwani & Verma, 2021, p. 80–81). Asimismo, una de las estrategias más extendidas para este propósito son los métodos apoyados en diccionarios especiales, también referidos como lexicones, donde cada término se asocia con una o varias emociones. Entre estos recursos destaca el NRC Word–Emotion Association Lexicon, un léxico construido por Mohammad & Turney (2013), miembros del Consejo Nacional de Investigación de Cánada, mediante un proceso llamado crowdsourcing, detallado a continuación.
+
+En este sentido, Mohammad & Turney (2013) crearon miles de encuestas donde muchas personas contestaban qué sentimiento les generaba cierta palabra, por una pequeña remuneración económica. De esta forma, con los resultados los autores asociaron de forma binaria (1 si la evoca, 0 si no) miles de palabras a las 8 emociones básicas propuestas por el psicólogo estadounidense Robert Plutchik (alegría, tristeza, ira, miedo, asco, sorpresa, confianza y anticipación), además de etiquetas de positivo y negativo.
+
+En este contexto, el presente proyecto desarrolla un flujo de procesamiento en R que se encarga de analizar cuantitativamente las emociones presentes en subítulos en español de una obra audiovisual de ficción, como una serie o una película, a partir del uso de una adaptación al español del lexicón NRC. De esta forma, se implementa una secuencia compuesta por los pasos de limpieza, normalización, tokenización, lematización, cálculo de puntajes emocionales, asignación de dichos puntajes, visualización de un resumen de emociones por escena y por último una visualización interactiva en Shiny de un gráfico por cada línea de subtítulos dentro de una escena.
+
+## Objetivo general
+
+Desarrollar un flujo de procesamiento en R que permita calcular y visualizar las emociones asociadas a cada línea de los subtítulos de una obra audiovisual de ficción.
+
+## Metodología
+
+El flujo está organizado en 5 scripts principales, los cuales corresponden a etapas sucesivas en el procesamiento de los datos:
+
+### 1. Carga y normalización de los subtítulos y el léxicon (*01.carga_y_normalización.R)*
+
+-   Primeramente se cargan los subtítulos en formato .srt de la carpeta data/raw/input mediante el paquete **srt,** usando el paquete **here** para mantener rutas relativas de forma sencilla.
+
+-   Se importa la versión traducida del lexicón y se normalizan las palabras: se convierte todo a minúsculas así como se eliminan tildes junto con caractéres especiales, usando los paquetes **stringr** y **stringi**.
+
+-   Asimismo, como el lexicón original fue hecho en inglés, al momento en que los autores tradujeron todas las palabras a español, se dieron numerosos casos en donde diferentes palabras en inglés se traducían a la misma palabra en español. Para que el sistema posteriormente no se confundiera con cuál conjunto de emociones debía asignarle a estas palabras, se hizo una función de *mayoria* para resolver los duplicados. Esta función agrupa cada conjunto de duplicados de la misma palabra y, por emoción, decide que la emoción se mantenga si esta aparece en una proporción suficiente de las entradas originales, de modo que la salida resultante refleje una representación fiel de las emociones que evocaba dicha palabra.
+
+-   Los subtítulos se limpian mediante paquetes como **textclean,** quitando marcas HTML. Asimismo, se usa en conjunto el paquete **rex** junto con **stringr** para eliminar anotaciones, corchetes, paréntesis, y otros elementos que introducen ruido propios de los archivos .srt
+
+### 2. Tokenización y lematización (*02.tokenizacion_y_lematizacion.R)*
+
+-   Se extraen cada línea de los subtítulos normalizados y se busca separar por palabra (tokenizar) así como llevar cada una de estas palabras a su forma base (lematizar) para que luego puedan hacer match con el lexicón de forma sencilla.
+
+-   En este sentido, se usa **udpipe**, el cual aporta un modelo preentrenado en español, que es el encargado de separar y llevar cada una de las palabras a su forma base, mientras que estas mantienen el identificador de la línea original a la que pertenecían en los subtítulos, para posteriormente ser unidas de nuevo.
+
+-   Asimismo, mediante el paquete **stopwords** se definen *stopwords:* palabras que se deben de eliminar del conjunto generado por udpipe, pues son palabras que aportan poco contenido semántico en la oración, como "el", "la", "y", "de", etc. En este sentido, se conservan algunas palabras que el paquete define como stopwords, especialmente negadores o cuantificadores, pues estos se usarán más adelante como multiplicadores de emoción.
+
+-   De la misma forma, se cuentan signos de exclamación, interrogación y cantidades de palabras negadores y reforzadoras (como no, sin, muy mucho) para posteriormente aplicar los multiplicadores ya mencionados.
+
+### 3. Cálculo de puntajes emocionales (*03.puntajes_emocionales.R)*
+
+-   Se vincula cada palabra ya lematizada en el paso anterior con el léxico que había resultado del paso 1, mediante un left_join del paquete **dplyr**. De esta forma, cada palabra presente en los subtítulos de la obra reciben los valores binarios 0 o 1 en las diez categorías correspondientes (alegría, ira, anticipación, asco, miedo, tristeza, sorpresa, confianza, negativo y positivo). Si una palabra no está en el lexicón simplemente se le asignan ceros en todas sus categorías.
+-   Se suman los valores por línea de los subtítulos, aprovechando los identificadores que se les habían dejado en el proceso de lematización. En este sentido, se obtienen los puntajes base de cada línea siguiendo la la lógica de los enfoques descritos en la literatura (Nandwani & Verma, 2021, p. 2).
+-   Sobre estos puntajes base por línea se aplican multiplicadores que dependen del número de exclamaciones, interrogaciones, negaciones o reforzadores presentes en cada línea, aprovechando que en el paso anterior se habían guardado los contadores por línea para estos elemento. Para cada emoción se define un factor distinto según el elemento que esté presente y el efecto total se calcula elevando cada uno de los factores al número de apariciones correspondiente del signo o cuantificador.
+-   Por último, cuando una línea no contiene palabras del lexicón pero sí signos de exclamación o interrogación, se añaden pequeños valores base por emoción, para evitar que expresiones con una posible fuerte carga emocional (por los signos) queden con un puntaje de 0.
+
+### 4. Gráficos de resumen (04.graficacion_resumen.R)
+
+-   Se cargan las líneas de los subtítulos ya puntuadas con todos los multiplicadores correspondientes aplicados y se filtra por un intervalo de interés (como una escena específica) utilizando las marcas de inicio y fin de los subtítulos.
+
+-   Se suman los puntajes en dicho intervalo para cada una de las categorías y se generan 2 gráficos con el paquete **ggplot2**: uno radial en forma de "flor" para las ocho emociones y uno de barras para comparar las categorías positivo y negativo.
+
+### 5. Visualizador interactivo en Shiny
+
+-   Se construye una aplicación web usando el paquete **shiny,** la cual se encarga actualizar el gráfico radial de flor en tiempo real, usando cada línea de los subtítulos de la escena que se esté viendo.
+
+-   En este sentido, shiny se constituye esencialmente de 2 partes: Por un lado, la UI, la cual es la parte visual, pues acomoda el video en la parte superior y los subtítulos junto con el gráfico correspondiente en la parte inferior. Asimismo, gracias a que está construida con JavaScript, se puede lograr que guarde el tiempo actual del video y esté activamente enviándolo al **server**, la otra parte de shiny. De esta forma, el server es el que se encarga de la lógica detrás, gracias a que sabe en qué segundo está en todo momento el video, arma el gráfico de "flor" en tiempo real según la línea de subtítulos correspondiente a dicho tiempo. Para que el server pueda realizar esto, usa algunas funciones auxiliares como buscar.linea.por.tiempo(), la cual encuentra el subtítulo activo según el tiempo y hacer.flor(); encargada de dibujar la flor de las emociones con ggplot2.
+
+## Resultados
+
+Para evaluar el flujo de procesamiento realizado se aplicó el procedimiento completo a los subtítulos en español del capítulo 16 de la tercera temporada del anime Attack on Titan. A partir de los puntajes emocionales obtenidos, se seleccionó un fragmento de la parte final (del minuto 16:40 al 22:00) del episodio para realizar el gráfico-resumen descrito en la sección 4 de la metodología. En este sentido la Figura 1 muestra la distribución radial de las ocho emociones categóricas, mientras que la Figura 2 resume la polaridad positiva y negativa.
+
+Se puede ver como en conjunto, ambos gráficos evidencian que el fragmento esta caracterizado por una fuerte carga negativa, con un predominio en tristeza, seguido por enojo, y en menor medida anticipación junto con asco. En menor medida se mantienen aportes de confianza y alegría. Esto es coherente con la narrativa de la escena, la cual trata, en términos generales, de unos soldados que se están armando de valor para atacar un titán gigante en forma de mono, en donde es claro que se verá una mezcla fuerte de desesperación (dominante en la escena, explica la predominancia de la tristeza, así como la fuerte presencia del enojo, anticipación y miedo) y una determinación (en menor medida, pero explica la confianza junto con la alegría).
+
+Además de estos resúmenes, el visualizador interactivo en Shiny permite graficar la flor emocional de cada línea de subtítulo en sincronía con el video. En este sentido, en la Figura 3 se observa el caso de la línea “Muévete por los titanes y ataca al titán bestia por sorpresa.", donde el modelo asigna valores elevados a miedo, junto con una moderada presencia de sorpresa, enojo y polaridad negativa, así como una contribución despreciable de las otras emociones. Esta combinación refleja adecuadamente el contenido de la frase, que transmite un alto riesgo, así como un componente súbito de un ataque por sorpresa.
+
+
+Finalmente, las Figuras 4 y 5 ilustran dos líneas consecutivas de la misma escena, en las que se da un contraste emocional muy marcado. En la Figura 4, correspondiente a la línea “Ya vivas una vida feliz...”, predominan claramente alegría y una polaridad positiva, en consonancia con el tono esperanzador del mensaje. Por otro lado, en la Figura 5, asociada a la línea inmediatamente siguiente: “O ya te haga pedazos una piedra.”, la flor emocional cambia por completo a enojo y polaridad negativa, capturando el cambio de enfoque hacia una visión amenazante, según el discurso del personaje que habla en ese momento. Este par de ejemplos se escogió para mostrar que, aún con el enfoque del código únicamente centrado en los subtítulos, el sistema es capaz de reflejar de forma razonable los cambios bruscos en las emociones en la misma escena.
+
+## Limitaciones
+
+### Dependencia de un léxico traducido
+
+La adaptación del lexicón NRC al español se basa en una traducción de la versión en inglés, así como la normalización posterior por la función de mayoría. Este proceso introduce una cantidad considerable de ruido en comparación con el lexicón original, pero se consideró necesario ante la escasez de recursos amplios de emociones en español. Sin embargo, muchas palabras del español no aparecen en el lexicón adaptado, por lo que numerosos términos presentes en los subtítulos quedan sin un puntaje asignado.
+
+### Limitación propia de los subtítulos
+
+Dado que los subtítulos únicamente capturan de forma textual lo que los personajes dicen, se pierden fenómenos como ironía o sarcasmo. Asimismo, al tratarse de un modelo que analiza únicamente el texto, se omite la carga emocional transmitida por otros factores independientes del texto, como el sonido, la escenografía, los movimientos de cámara, entre otros.
+
+## Recomendaciones
+
+Sería deseable refinar y validar el léxico en español, pues como ya fue discutido, el utilizar un lexicón modificado al original en inglés produce mucho ruido. Para abordar esta limitación, podría construirse un lexicón desde cero mediante crowdsourcing, o bien refinar la traducción existente de forma más exhaustiva, aplicando un proceso de validación estricto.
+
+Asimismo, se podrían calibrar los multiplicadores definidos para exclamaciones, interrogaciones, negaciones y reforzadores, mediante datos oficiales de intensidad emocional o, alternativamente, mediante crowdsourcing.
+
+## Conclusiones
+
+Los resultados obtenidos en el capítulo analizado muestran que, aún con enfoque léxico relativamente sencillo, el sistema logra capturar patrones emocionales coherentes con la narrativa. PPor un lado el resumen muestra una clara predominancia de emociones negativas, lo que está en consonancia con el fragmento analizado, y por otro lado, las visualizaciones línea a línea destacan la capacidad del modelo para representar contrastes afectivos marcados y para mostrar, de manera razonablemente precisa, la coexistencia de múltiples emociones dentro de una misma escena.
+
+Por último, puede observarse que el el flujo desarrollado cumplió con el objetivo general planteado: calcular y visualizar las emociones asociadas a cada línea de los subtítulos de una obra audiovisual de ficción. A partir de la adaptación al español al lexicón NRC y de una aplicación ordenada de los pasos de limpieza, normalización, tokenización, lematización y asignación de puntajes emocionales, fue posible cuantificar las emociones presentes en cada línea de diálogo; el script 4 permitió resumir el comportamiento emocional a nivel de escena agrupada, mientras que el script 5 proporcionó un resumen detallado para cada línea individual.
+
+## Referencias
+
+\begin{hangparas}{1.27cm}{1}
+
+Mohammad, S. M., \& Turney, P. D. (2013). Crowdsourcing a word–emotion association lexicon. Computational Intelligence, 29(3), 436–465. \url{https://doi.org/10.48550/arXiv.1308.6297}
+
+Nandwani, P., \& Verma, R. (2021). A review on sentiment analysis and emotion detection from text. Social Network Analysis and Mining, 11, 81. \url{https://doi.org/10.1007/s13278-021-00776-6}
+
+\end{hangparas}
+
+\newpage
+
+## Figuras
+
+![Distribución de las ocho emociones en los minutos 16:40 al 22:00 del capítulo analizado](images/resumen.emociones.radial.png){width=50%}
+
+![Resumen de la polaridad positiva y negativa en los minutos 16:40 al 22:00 del capítulo analizado](images/resumen.emociones.posneg.png){width=50%}
+
+![Flor emocional para la línea “Muévete por los titanes y ataca al titán bestia por sorpresa.”](images/Screenshot%202025-12-05%20202916.png)
+
+![Flor emocional para la línea “Ya vivas una vida feliz…”.](images/Screenshot%202025-12-05%20202800.png)
+
+![Flor emocional para la línea “O ya te haga pedazos una piedra.”](images/Screenshot%202025-12-05%20202745.png)
+
+
